@@ -1,5 +1,4 @@
 import './itemCount.css';
-
 import React, {useState, useEffect} from 'react';
 
 export const ItemCount = ({initial, stock, onAdd}) => {
@@ -22,12 +21,13 @@ export const ItemCount = ({initial, stock, onAdd}) => {
 
     // Fin Funciones Incrementar y Decrease
     return (
+        
         <div className='counter'>
-            <button disabled={count <= 1} onClick={decrease}>-</button>
-            <span>{count}</span>
-            <button disabled={count >= stock} onClick={increase}>+</button>
+            <button className='btn btn-primary mx-3' disabled={count <= 1} onClick={decrease}>-</button>
+            <span className='fw-bold'>{count}</span>
+            <button className='btn btn-primary mx-3' disabled={count >= stock} onClick={increase}>+</button>
             <div>
-                <button disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
+                <button className='mt-3 btn btn-primary' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</button>
             </div>
         </div>
     );

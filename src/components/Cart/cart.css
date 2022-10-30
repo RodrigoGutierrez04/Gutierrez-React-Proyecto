@@ -1,0 +1,14 @@
+.botonComprar{
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+  .vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+

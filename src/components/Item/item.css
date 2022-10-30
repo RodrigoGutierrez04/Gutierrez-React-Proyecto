@@ -8,5 +8,10 @@
     width: 25rem;
 }
 
+.father{
+    display: flex;
+    flex-direction: row;
+}
+
 
 

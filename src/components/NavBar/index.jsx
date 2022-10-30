@@ -20,7 +20,7 @@ export const NavBar = () => {
         <nav className="navbar navbar-expand-lg na" style={navbarbg}>
         <div className="container-fluid">
           <NavLink className="navbar-brand" to='/'>
-            <img src="img/refreshme2-cropped.svg" style={logo}/>
+            <img src="img/refreshme2-cropped.svg" style={logo} alt="logo"/>
           </NavLink>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
